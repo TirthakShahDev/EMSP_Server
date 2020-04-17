@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const uuid = require("uuid");
 
-const PUBLIC_URL = "https://service.msp.com";
+const PUBLIC_URL = "https://test-ocn.emobilify.com/ocpi/versions";
 const TOKEN_B = uuid.v4();
 console.log("Auth TOKEN_B = " + TOKEN_B);
 
