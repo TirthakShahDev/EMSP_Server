@@ -3,7 +3,7 @@ var router = express.Router();
 const uuid = require("uuid");
 
 const PUBLIC_URL = "https://service.msp.com";
-const TOKEN_B = uuid.v4();
+const TOKEN_B = "24c90eb9-94dc-4d17-8474-fd0163cebd43";
 console.log("Auth TOKEN_B = " + TOKEN_B);
 
 /* GET home page. */
