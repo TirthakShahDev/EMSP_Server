@@ -12,13 +12,13 @@ router.get('/', function(req, res, next) {
 });
 
 const authorize = (req, res, next) => {
-	if (req.headers.authorization !== `token ${TOKEN_B}`) {
-		return res.status(401).send({
-			status_code: 2001,
-			status_message: "Unauthorized",
-			timestamp: new Date()
-		})
-	}
+	// if (req.headers.authorization !== `token ${TOKEN_B}`) {
+	// 	return res.status(401).send({
+	// 		status_code: 2001,
+	// 		status_message: "Unauthorized",
+	// 		timestamp: new Date()
+	// 	})
+	// }
 	next()
 } 
 
