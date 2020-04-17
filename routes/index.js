@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 const uuid = require("uuid");
 
-const PUBLIC_URL = "https://emsp.herokuapp.com";
-const TOKEN_B = "24c90eb9-94dc-4d17-8474-fd0163cebd43";
+const PUBLIC_URL = "https://service.msp.com";
+const TOKEN_B = uuid.v4();
 console.log("Auth TOKEN_B = " + TOKEN_B);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express', TOKEN_B : TOKEN_B });
 });
 
 const authorize = (req, res, next) => {
