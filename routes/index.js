@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const uuid = require("uuid");
 
-const PUBLIC_URL = "https://emsp.heroku.com";
+const PUBLIC_URL = "https://emsp.herokuapp.com";
 const TOKEN_B = uuid.v4();
 console.log("Auth TOKEN_B = " + TOKEN_B);
 
